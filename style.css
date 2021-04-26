@@ -791,7 +791,22 @@ Bouton burger
 menu tablet
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 37.5em) {
-  .menu-toggle {
+  #menu-toggle {
+    display: none;
+  }
+  .essai1 {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  .line1 {
+    display: none;
+  }
+  .line2 {
+    display: none;
+  }
+  .line3 {
     display: none;
   }
   .main-navigation.toggled ul,
@@ -851,6 +866,76 @@ menu tablet
 .post-navigation .nav-next {
   text-align: end;
   flex: 1 0 50%;
+}
+
+@keyframes animatetitle {
+  0% {
+    transform: translateY(-500px);
+  }
+  50% {
+    transform: translateY(50px) scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.site-title {
+  animation: animatetitle 4s;
+}
+
+/* --------------------------------------------------------------------------------------
+  Les variables 
+  ---------------------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------------------
+  Le bouton burger
+  ----------------------------------------------------------------------------------------- */
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
 /* Posts and pages
@@ -1096,7 +1181,7 @@ body.home::after {
 @media (min-width: 800px) {
   body.home::after {
     clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
-    background-color: #4475ad;
+    background-color: white;
   }
 }
 
@@ -1159,6 +1244,9 @@ Liste des blocs de cours par type_de_cours
   margin: 1%;
   padding: 1rem;
   text-align: center;
+  background-image: url(imgBackArticle.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .home .cours section.bloc article p {
@@ -1176,6 +1264,10 @@ Liste des blocs de cours par type_de_cours
   .home .cours section.bloc article {
     width: 47%;
     margin: 1%;
+    background-image: url(imgBackArticle.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: hidden;
   }
 }
 
@@ -1183,6 +1275,9 @@ Liste des blocs de cours par type_de_cours
   .home .cours section.bloc article {
     width: 31%;
     margin: 1%;
+    background-image: url(tokyoGk.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -1218,7 +1313,7 @@ Liste des blocs de cours par type_de_cours
 --------------------------------------------- */
 .carrousel {
   width: 300vw;
-  height: 20vh;
+  height: 50vh;
   display: flex;
   transition: transform .5s;
   transform: translate(0);
@@ -1249,7 +1344,7 @@ Liste des blocs de cours par type_de_cours
   background-repeat: no-repeat;
 }
 
-#buttoncaroussel {
+#buttoncarrousel {
   display: flex;
   width: 100vw;
   margin: 20px;
@@ -1276,6 +1371,7 @@ Liste des blocs de cours par type_de_cours
 }
 
 .carrousel-2 .slide__conteneur .slide {
+  margin-top: 5%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -1301,23 +1397,31 @@ Liste des blocs de cours par type_de_cours
 
 .carrousel-2 .slide__conteneur .slide .slide__info p {
   font-size: .8rem;
+  color: white;
 }
 
 .carrousel-2 .slide__conteneur .slide .slide__info a {
   font-size: 1.2rem;
   text-decoration: none;
+  color: white;
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
-  background-color: #00ff37;
+  background-image: url(ken2.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(2) {
-  background-color: #ff9d00;
+  background-image: url(keneki.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(3) {
-  background-color: #00aeff;
+  background-image: url(kaneki.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .ctrl-carrousel {

@@ -16,7 +16,7 @@ body.home::after{
     right : 0;
     @include tablet{
         clip-path : polygon(90% 0, 100% 0, 100% 100% , 80% 100%);
-         background-color: rgb(68, 117, 173);
+         background-color: rgb(255, 255, 255);
     }
 
    z-index: -1;
@@ -85,6 +85,9 @@ Liste des blocs de cours par type_de_cours
             margin : 1%;
             padding  : 1rem;
             text-align : center;
+            background-image: url(imgBackArticle.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100%;
             p {
                 margin: .4rem;
                 font-size: 1rem;
@@ -99,12 +102,19 @@ Liste des blocs de cours par type_de_cours
             article {
                 width : 47%;
                 margin : 1%;
+                background-image: url(imgBackArticle.jpeg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-image: hidden;
             }
         }
         @include desktop {
             article {
             width : 31%;
             margin : 1%;
+            background-image: url(tokyoGk.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100%;
             }
         }
     }

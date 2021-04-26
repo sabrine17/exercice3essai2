@@ -117,9 +117,25 @@ menu tablet
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 37.5em) {
 
-	.menu-toggle {
+	#menu-toggle {
 		display: none;
 	}
+
+	.essai1{
+		display:none;
+	}
+	.line {
+		display: none;
+	  }
+	  .line1 {
+		display: none;
+	  }
+	  .line2 {
+		display: none;
+	  }
+	  .line3 {
+		display:none;
+	  }
 	.main-navigation.toggled ul,
 	.main-navigation ul {
 		display: flex;
@@ -141,7 +157,10 @@ menu tablet
 		display : none;
 		
 	}	
+
+
 	}
+
 }
 
 @keyframes anim-sous-menu {
@@ -154,6 +173,9 @@ menu tablet
 		transform : translateX(0) translateY(0);
 	}
 }
+
+
+
 
 
 .comment-navigation,
@@ -177,3 +199,78 @@ menu tablet
 		flex: 1 0 50%;
 	}
 }
+
+
+
+  @keyframes animatetitle{
+	0%{
+		transform :translateY(-500px) ;
+		
+	}
+	50%{
+		transform :translateY(50px) scaleY(2) ;
+		
+	}
+	100%{
+		transform : scaleY(1) ;
+	
+	}
+	}
+	
+	.site-title{
+	animation: animatetitle 4s;
+	}
+	
+  
+  
+	/* --------------------------------------------------------------------------------------
+  Les variables 
+  ---------------------------------------------------------------------------------------- */
+  /*---------------------------------------------------------------------------------------
+  Le bouton burger
+  ----------------------------------------------------------------------------------------- */
+  
+  
+  .menu-toggle {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	padding: 0;
+  }
+  .line {
+	fill: none;
+	stroke: black;
+	stroke-width: 6;
+	transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+	  stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+	stroke-dasharray: 60 207;
+	stroke-width: 6;
+  }
+  .line2 {
+	stroke-dasharray: 60 60;
+	stroke-width: 6;
+  }
+  .line3 {
+	stroke-dasharray: 60 207;
+	stroke-width: 6;
+  }
+  .opened .line1 {
+	stroke-dasharray: 90 207;
+	stroke-dashoffset: -134;
+	stroke-width: 6;
+  }
+  .opened .line2 {
+	stroke-dasharray: 1 60;
+	stroke-dashoffset: -30;
+	stroke-width: 6;
+  }
+  .opened .line3 {
+	stroke-dasharray: 90 207;
+	stroke-dashoffset: -134;
+	stroke-width: 6;
+  }
+  
+  
