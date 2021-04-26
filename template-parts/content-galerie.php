@@ -7,6 +7,7 @@
  * @package theme-sc
  */
 global $tPropriété;
+
 ?>
 
 
@@ -18,8 +19,14 @@ global $tPropriété;
 <div class="flip-card-back">
     
      <h1><a href="<?php echo get_permalink() ?>"><?php the_title();?></a></h1>
-    <p><a href="<?php echo get_permalink() ?>"><?php the_archive_title();  ?></a> </p>
+     <p><a href="<?php echo get_permalink() ?>"><?php the_archive_title();?></a></p>
+    <p><a href="<?php echo get_permalink() ?>"><?php the_author();?></a> </p>
 </div>
 </div>
 
 </article>
+
+
+
+
+
