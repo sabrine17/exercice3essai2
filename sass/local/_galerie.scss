@@ -53,6 +53,7 @@
       align-items: center;
       justify-content: center;
       font-size:0.5rem;
+      animation: anim-texte2 .5s both;
     
   }
 
@@ -90,5 +91,21 @@
 	100%{
 		opacity: 0;
 		
+	}
+}
+
+
+@keyframes anim-texte2 {
+	0%{
+		opacity : 0;
+		transform : translateX(0) translateY(0);
+	}
+    50%{
+        opacity: .5;
+        transform : translateX(0) translateY(5px);
+    }
+	100%{
+		opacity: 1;
+		transform : translateX(0) translateY(20px);
 	}
 }
