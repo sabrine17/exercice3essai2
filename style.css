@@ -1580,7 +1580,7 @@ La barre du millieu
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  animation: anim-carte .2s both;
+  animation: anim-carte .5s both;
 }
 
 .galerie .flip-card {
@@ -1630,6 +1630,10 @@ La barre du millieu
   font-size: 0.5rem;
 }
 
+.galerie a:hover {
+  animation: anim-texte .5s both;
+}
+
 @keyframes anim-carte {
   0% {
     opacity: 0;
@@ -1642,6 +1646,18 @@ La barre du millieu
   100% {
     opacity: 1;
     transform: translateX(0) translateY(100px);
+  }
+}
+
+@keyframes anim-texte {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

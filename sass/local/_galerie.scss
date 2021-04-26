@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    animation : anim-carte .2s both;
+    animation : anim-carte .5s both;
 
   .flip-card{
       margin: 2%;
@@ -55,6 +55,10 @@
       font-size:0.5rem;
     
   }
+
+  a:hover{
+      animation: anim-texte .5s both;
+  }
 }
 
 
@@ -70,5 +74,21 @@
 	100%{
 		opacity: 1;
 		transform : translateX(0) translateY(100px);
+	}
+}
+
+
+@keyframes anim-texte {
+	0%{
+		opacity : 1;
+		
+	}
+    50%{
+        opacity: .5;
+        
+    }
+	100%{
+		opacity: 0;
+		
 	}
 }
