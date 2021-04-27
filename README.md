@@ -14,8 +14,10 @@ Lien répertoire  git de l'exercice 3:
 https://github.com/sabrine17/exercice3essai2.git
 
 Lien site git hub de l'exercice 3
-https://sabrine17.github.io/exercice3essai2/
+https://sabrine17.github.io/exercice3essai2/index.html
+// CLIQUER SUR 4W4 POUR AFFICHER LES IMAGES ET QUE LA PAGE FONCTIONNE NORMALEMENT
 
 Lien du site webdev
 https://e1648488.webdev.cmaisonneuve.qc.ca/design/projetsession/
+// non fonctionnel bug git
 
