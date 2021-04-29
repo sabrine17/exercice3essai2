@@ -9,7 +9,7 @@
 	window.addEventListener('load', monAjax);
 	let maRequete = new XMLHttpRequest();
    	console.log(maRequete);
-  	maRequete.open('GET', 'http://localhost:8888/4w4/wp-json/wp/v2/posts');
+  	maRequete.open('GET', 'http://localhost:8888/4w4-1/wp-json/wp/v2/posts?categories=34');
     maRequete.onload = function () {
        console.log(maRequete);
        if (maRequete.status >= 200 && maRequete.status < 400) {
