@@ -17,6 +17,17 @@ get_header();
 
 	<main id="primary" class="site-main">
 
+
+	<section class="carrousel">
+			<div></div>
+			<div></div>
+			<div></div>
+		</section>
+		<div id= 'buttoncarrousel'>
+			<button id='un'></button>
+			<button id='deux'></button>
+			<button id='trois'></button>	
+		</div>
 		<?php
 		while ( have_posts() ) :
 			the_post();

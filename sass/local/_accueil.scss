@@ -159,10 +159,11 @@ Liste des blocs de cours par type_de_cours
 .nouvelles{
     
     //margin: 2% 4% 2% 3%;
-    background-image: url(Tokyo_Ghoul_Visual_2.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+   // background-image: url(Tokyo_Ghoul_Visual_2.png);
+   // background-size: 100%;
+   // background-repeat: no-repeat;
     //background-color: rgb(231, 225, 208);
+    background-color: white;
     text-align: justify;
     width: 100%;
     margin-top:5%;
@@ -179,16 +180,16 @@ Liste des blocs de cours par type_de_cours
     }
 
     h2:hover{
-        color:white;
+        color:black;
     }
 
     p{
-        color:white;
+        color:black;
         font-weight: bold;
     
     }
     p:hover{
-       color: black;
+       color: red;
        animation: 5s anim-textNouvelles both;
     }
 }
@@ -222,7 +223,7 @@ Liste des blocs de cours par type_de_cours
  
 	100%{
 		
-		transform : translateX(100px) translateY(0);
+		transform : translateX(20px) translateY(0);
 	}
 }
 

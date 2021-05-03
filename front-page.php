@@ -58,6 +58,7 @@ get_header();
 				$precedent = $tPropriété['typeCours'];
 			endwhile;?>
 			</section> <!-- fin section cours -->
+			<?PHP if (current_user_can('administrator')) : ?>
 <!-- /////////////////////////////////////////////////////////
 		Formulaire d'ajout d'un article de cat Nouvelles -->
 
@@ -67,7 +68,7 @@ get_header();
 		<textarea name="content" placeholder="Contenu"></textarea>
 		<button id='bout-rapide'>Créer une Nouvelle</button>
 		</section>
-
+<?php endif?>
 		<section class="nouvelles">
 
 		</section>

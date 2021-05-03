@@ -51,7 +51,8 @@
 		
 			<!-- debut caroussel -->
 		<?php
-		if ( is_front_page() ) : ?>
+		if ( is_front_page() ) :
+		 ?>
 		<section class="carrousel">
 			<div></div>
 			<div></div>

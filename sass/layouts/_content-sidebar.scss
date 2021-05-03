@@ -1,14 +1,27 @@
 .site {
 	display: grid;
 	//grid-template-columns:  ($size__site-sidebar) auto;
+	grid-template-columns: 100%;
+	grid-template-areas:
+	"header header"
+	"main main"
+	"sidebar sidebar"
+	"footer footer";
+
+@include media-desktop(700px){
+
+	//grid-template-columns:  ($size__site-sidebar) auto;
 	grid-template-columns: 80% 20%;
 	grid-template-areas:
 		"header header"
 		"main sidebar"
 		"footer footer";
+
+}
 }
 
 .site-header {
+
 	grid-area: header;
 }
 
@@ -19,6 +32,8 @@
 
 .widget-area {
 	grid-area: sidebar;
+	background-color: rgb(218, 171, 171);
+	padding-left: 6%;
 }
 
 .site-footer {

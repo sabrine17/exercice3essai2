@@ -1811,16 +1811,9 @@ La barre du millieu
   margin-top: 30%;
 }
 
-@keyframes anim-textNouvelles {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-  50% {
-    transform: translateX(0) translateY(50px);
-  }
-  100% {
-    transform: translateX(0) translateY(100px);
-  }
+.footerbar {
+  align-content: center;
+  justify-content: center;
 }
 
 /* local formulaire

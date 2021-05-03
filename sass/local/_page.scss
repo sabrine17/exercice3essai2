@@ -31,9 +31,12 @@
      
         font-size: 1rem;
         color: rgb(70, 21, 1); 
+     
+
         
         p{
             margin:0;
+            
         }
     }
 }
@@ -54,17 +57,65 @@
     margin-top:30%;  
 }
 
-@keyframes anim-textNouvelles {
-	0%{
-		
-		transform : translateX(0) translateY(0);
-	}
-    50%{
-        
-        transform : translateX(0) translateY(50px);
+.footerbar{
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+}
+
+
+
+.entry-header, .page-header{
+    color: rgb(113, 0, 0);
+  
+    h1{
+        font-size: 3rem;
     }
-	100%{
-		
-		transform : translateX(0) translateY(100px);
-	}
+    h2{
+        font-size: 2rem;
+    }
+}
+
+.carrousel {
+    width: 300vw;
+    height: 50vh;
+    display : flex;
+    transition : transform .5s;
+    transform : translate(0);
+
+    div {
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        width : 100vw;
+
+        &:nth-of-type(1){
+            background-image: url(ken2.jpeg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        &:nth-of-type(2){
+            background-image: url(keneki.gif);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        &:nth-of-type(3){
+            background-image: url(kaneki.gif);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+    }
+   
+}
+
+#buttoncarrousel
+{
+    display: flex;
+    width: 100vw;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
