@@ -663,6 +663,30 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.site {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-areas: "header header" "main sidebar" "footer footer";
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.site-main {
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget-area {
+  grid-area: sidebar;
+}
+
+.site-footer {
+  grid-area: footer;
+}
+
 .no-sidebar .site {
   display: grid;
   grid-template-columns: auto;
@@ -1309,6 +1333,63 @@ Liste des blocs de cours par type_de_cours
   background-repeat: no-repeat;
 }
 
+.nouvelles {
+  background-image: url(Tokyo_Ghoul_Visual_2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: justify;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  box-shadow: 5px 5px 33px 5px #8E8E8E;
+}
+
+.nouvelles h2 {
+  color: red;
+}
+
+.nouvelles h2:hover {
+  color: white;
+}
+
+.nouvelles p {
+  color: white;
+  font-weight: bold;
+}
+
+.nouvelles p:hover {
+  color: black;
+  animation: 5s anim-textNouvelles both;
+}
+
+.admin-rapid {
+  color: black;
+  font-weight: bold;
+  text-align: justify;
+  width: 100%;
+  margin-top: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  box-shadow: 5px 5px 33px 5px #8E8E8E;
+}
+
+/*#media_image-2{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}*/
+@keyframes anim-textNouvelles {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(100px) translateY(0);
+  }
+}
+
 /* local carrousel
 --------------------------------------------- */
 .carrousel {
@@ -1715,4 +1796,33 @@ La barre du millieu
 .page-header .archive-description p {
   margin: 0;
 }
+
+#media_image-2 {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-main {
+  margin-top: 10%;
+}
+
+#categories-2 {
+  margin-top: 30%;
+}
+
+@keyframes anim-textNouvelles {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(0) translateY(50px);
+  }
+  100% {
+    transform: translateX(0) translateY(100px);
+  }
+}
+
+/* local formulaire
+--------------------------------------------- */
 /*# sourceMappingURL=style.css.map */
