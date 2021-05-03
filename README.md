@@ -1,4 +1,4 @@
-# labo8
+# exercice4
 
 Auteur: Sabrine Cheurfa
 
@@ -11,10 +11,10 @@ voulais adapter mon site avec des images d'animes pour cibler une clientèle plu
 Le titre de mon site : TIM 
 
 Lien répertoire  git de l'exercice 3:
-https://github.com/sabrine17/labo8.git
+https://github.com/sabrine17/exercice4.git
 
 Lien site git hub de l'exercice 3
-https://sabrine17.github.io/labo8/index.html
+https://sabrine17.github.io/exercice4/
 // CLIQUER SUR 4W4 POUR AFFICHER LES IMAGES ET QUE LA PAGE FONCTIONNE NORMALEMENT
 
 Lien du site webdev
