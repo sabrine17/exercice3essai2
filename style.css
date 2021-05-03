@@ -1334,7 +1334,38 @@ Liste des blocs de cours par type_de_cours
 }
 
 .nouvelles {
-  margin: 2% 4% 2% 3%;
+  background-color: #e7e1d0;
+  color: black;
+  font-weight: bold;
+  text-align: justify;
+  width: 100%;
+  margin-top: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  box-shadow: 5px 5px 33px 5px #8E8E8E;
+}
+
+.nouvelles h2 {
+  color: white;
+}
+
+.nouvelles h2:hover {
+  color: red;
+}
+
+.nouvelles p:hover {
+  color: white;
+}
+
+.admin-rapid {
+  background-color: #e7e1d0;
+  color: black;
+  font-weight: bold;
+  text-align: justify;
+  width: 100%;
+  margin-top: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 /*#media_image-2{
@@ -1753,6 +1784,14 @@ La barre du millieu
   align-content: center;
   align-items: center;
   justify-content: center;
+}
+
+.site-main {
+  margin-top: 10%;
+}
+
+#categories-2 {
+  margin-top: 30%;
 }
 
 /* local formulaire

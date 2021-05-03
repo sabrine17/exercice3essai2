@@ -1,5 +1,5 @@
 .site-title {
-
+    
     font-family: $font__sitetitle ;
     font-weight: bold;
     font-size: clamp(1rem, #{"-0.875rem + 8.333vw"},3rem);
@@ -19,6 +19,7 @@
 .page-header {
     margin-top : 130px;
 
+
     .page-title
     {
     font-size: 3rem;
@@ -27,7 +28,7 @@
     }
 
     .archive-description{
-      
+     
         font-size: 1rem;
         color: rgb(70, 21, 1); 
         
@@ -45,6 +46,10 @@
 }
 
 
-.nouvelles{
-    
+.site-main{
+    margin-top:10%;
+}
+
+#categories-2{
+    margin-top:30%;  
 }
