@@ -19,5 +19,5 @@ https://sabrine17.github.io/exercice3essai2/index.html
 
 Lien du site webdev
 https://e1648488.webdev.cmaisonneuve.qc.ca/design/projetsession/
-// non fonctionnel bug git
+// non fonctionnel page projet ne s'affiche pas
 
