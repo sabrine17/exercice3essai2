@@ -16,6 +16,7 @@
 
 			<?php if(is_active_sidebar('footer-1')): ?>
 				<?php dynamic_sidebar('footer-1'); ?>
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
 			<?php endif ?>
 		
 		

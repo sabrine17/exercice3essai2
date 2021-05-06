@@ -51,6 +51,9 @@ get_header();
 						$chaine_bouton_radio .= '<input class="rad-carrousel"  type="radio" name="rad-'.$tPropriété['typeCours'].'">';
 				elseif ($tPropriété['typeCours'] == 'Projet'):
 					get_template_part( 'template-parts/content', 'galerie' ); 
+					
+				elseif ($tPropriété['typeCours'] == 'Projets Perso'):
+					get_template_part( 'template-parts/content', 'galerie-perso' ); 
 				
 					else :		
 				get_template_part( 'template-parts/content', 'cours-article' ); 
@@ -68,7 +71,7 @@ get_header();
 		<textarea name="content" placeholder="Contenu"></textarea>
 		<button id='bout-rapide'>Créer une Nouvelle</button>
 		</section>
-<?php endif?>
+		<?php endif?>
 		<section class="nouvelles">
 
 		</section>
@@ -117,8 +120,13 @@ function class_composent($typeCours){
 	if (in_array($typeCours, ['Web', 'Jeu', 'Spécifique', 'Image 2d/3d' ])){
 		return 'class="carrousel-2"';
 	}
-	elseif($typeCours =='Projet'){
+	elseif($typeCours =='Projet') {
 		return 'class="galerie"';
+	
+	}
+	elseif($typeCours =='Projets Perso'){
+	return 'class="galerie"';
+
 	}
 	else{
 		return 'class="bloc"';

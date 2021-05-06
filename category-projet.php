@@ -27,6 +27,15 @@ while (have_posts()) :
    <?php endwhile; ?>
 
    </section>
+
+   <section class="galerie-perso">
+    <?php 
+    while (have_posts()) :
+    the_post(); ?>
+    <?php get_template_part('template-parts/content', 'galerie-perso'); ?>
+   <?php endwhile; ?>
+
+   </section>
    <?php endif;?>
 
    </main>

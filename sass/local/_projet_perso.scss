@@ -4,8 +4,8 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    animation : anim-carte .5s both;
-    
+    animation : anim-carte2 .5s both;
+
   .flip-card{
       margin: 2%;
       background-color: transparent;
@@ -42,7 +42,7 @@
   }
 
   .flip-card-back{
-      background-color: #050505;
+      background-color: #000000;
       color: white;
       transform: rotateY(180deg);
   }
@@ -53,7 +53,7 @@
       align-items: center;
       justify-content: center;
       font-size:0.5rem;
-      animation: anim-texte2 .5s both;
+      animation: anim-texte .5s both;
     
   }
 
@@ -95,7 +95,7 @@
 }
 
 
-@keyframes anim-texte2 {
+@keyframes anim-texte {
 	0%{
 		opacity : 0;
 		transform : translateX(0) translateY(0);
