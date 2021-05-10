@@ -1,4 +1,3 @@
-
 (function(){
 
 
@@ -70,6 +69,6 @@ Traitement de l'ajout d'un article de cat Nouvelles
 	}
 })
 
-//})
+
 }( ) )
 

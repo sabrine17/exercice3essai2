@@ -83,6 +83,8 @@ Bouton burger
 //	transition : transform .25s;
 //	transform : rotate(0deg);
 	border : 0;
+
+	
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
@@ -113,7 +115,7 @@ menu tablet
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 37.5em) {
 
-	#menu-toggle {
+	.menu-toggle {
 		display: none;
 	}
 
@@ -200,7 +202,7 @@ menu tablet
 
   @keyframes animatetitle{
 	0%{
-		transform :translateY(-500px) ;
+		transform :translateY(-450px) ;
 		
 	}
 	50%{
@@ -233,6 +235,8 @@ menu tablet
 	cursor: pointer;
 	display: flex;
 	padding: 0;
+
+	
   }
   .line {
 	fill: none;

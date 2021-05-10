@@ -78,11 +78,6 @@ get_header();
 		</section>
 
 
-
-
-
-
-
 		<?php endif; ?>
 
 

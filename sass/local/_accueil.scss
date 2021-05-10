@@ -109,6 +109,12 @@ Liste des blocs de cours par type_de_cours
                 background-size: 100%;
                 background-image: hidden;
             }
+            
+            #burger{
+                div{
+                    display: none;
+                }
+            }
         }
         @include desktop {
             article {
@@ -118,6 +124,13 @@ Liste des blocs de cours par type_de_cours
             background-repeat: no-repeat;
             background-size: 100%;
             }
+           
+            #burger{
+                div{
+                    display: none;
+                }
+            }
+           
         }
     }
 }
@@ -198,7 +211,7 @@ Liste des blocs de cours par type_de_cours
 
 .admin-rapid{
 
-   
+  
     color:black;
     font-weight: bold;
     text-align: justify;

@@ -837,7 +837,7 @@ Bouton burger
 menu tablet
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 37.5em) {
-  #menu-toggle {
+  .menu-toggle {
     display: none;
   }
   .essai1 {
@@ -916,7 +916,7 @@ menu tablet
 
 @keyframes animatetitle {
   0% {
-    transform: translateY(-500px);
+    transform: translateY(-450px);
   }
   50% {
     transform: translateY(50px) scaleY(2);
@@ -1316,6 +1316,9 @@ Liste des blocs de cours par type_de_cours
     background-size: 100%;
     background-image: hidden;
   }
+  .home .cours section.bloc #burger div {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1325,6 +1328,9 @@ Liste des blocs de cours par type_de_cours
     background-image: url(tokyoGk.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+  .home .cours section.bloc #burger div {
+    display: none;
   }
 }
 
