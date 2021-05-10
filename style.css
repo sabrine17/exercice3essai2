@@ -696,10 +696,12 @@ textarea {
 }
 
 .site-footer {
+  display: flex;
   grid-area: footer;
-  background-color: #f6e6e4;
+  background-color: #f1ebeb;
   padding-left: 6%;
   padding-bottom: 10%;
+  overflow: hidden;
 }
 
 .gmaps {
@@ -1355,6 +1357,7 @@ Liste des blocs de cours par type_de_cours
 }
 
 .nouvelles {
+  margin: 2% 4% 2% 3%;
   background-color: white;
   text-align: justify;
   width: 100%;
@@ -1981,7 +1984,7 @@ La barre du millieu
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  animation: anim-carte2 .5s both;
+  animation: anim-carte .5s both;
 }
 
 .galerie .flip-card {
@@ -2030,7 +2033,7 @@ La barre du millieu
   align-items: center;
   justify-content: center;
   font-size: 0.5rem;
-  animation: anim-texte .5s both;
+  animation: anim-texte2 .5s both;
 }
 
 .galerie a:hover {
@@ -2064,7 +2067,7 @@ La barre du millieu
   }
 }
 
-@keyframes anim-texte {
+@keyframes anim-texte2 {
   0% {
     opacity: 0;
     transform: translateX(0) translateY(0);

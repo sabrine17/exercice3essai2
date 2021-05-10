@@ -72,6 +72,7 @@ get_header();
 		<button id='bout-rapide'>Créer une Nouvelle</button>
 		</section>
 		<?php endif?>
+		
 		<section class="nouvelles">
 
 		</section>
