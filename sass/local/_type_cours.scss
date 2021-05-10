@@ -1,5 +1,6 @@
 .cours-accueil{
 
+ 
 width:100vw;
 display: flex;
 flex-direction: column;
@@ -65,7 +66,9 @@ h2{
     background-color: white;
 }
 
-@include media-desktop(800px){
+@include tablet
+
+{
     .accueil{
         flex-direction: row;
     }
@@ -83,7 +86,10 @@ h2{
     }
 }
 
-@include media-desktop(1200px){
+@include desktop
+
+
+{
     .accueil{
         flex-direction: row;
     }

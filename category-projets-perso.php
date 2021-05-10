@@ -23,7 +23,7 @@ the_archive_description('<div class="archive-description">', '</div>');
 <?php 
 while (have_posts()) :
     the_post(); ?>
-    <?php get_template_part('template-parts/content', 'galerie'); ?>
+    <?php get_template_part('template-parts/content', 'galerie-perso'); ?>
    <?php endwhile; ?>
 
    </section>

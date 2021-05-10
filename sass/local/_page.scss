@@ -16,11 +16,11 @@
     font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.5rem);
 }
 
-.page-header {
+.page-header, .entry-header {
     margin-top : 130px;
 
 
-    .page-title
+    .page-title, .entry-header
     {
     font-size: 3rem;
     color: rgb(0, 6, 0);
@@ -42,26 +42,20 @@
 }
 
 #media_image-2{
-
+   
     align-content: center;
     align-items: center;
     justify-content: center;
 }
 
 
-.site-main{
-    margin-top:10%;
-}
+
 
 #categories-2{
     margin-top:30%;  
 }
 
-.footerbar{
-    align-content: center;
-    justify-content: center;
-    background-color: black;
-}
+
 
 
 

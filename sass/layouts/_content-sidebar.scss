@@ -8,21 +8,22 @@
 	"sidebar sidebar"
 	"footer footer";
 
-@include media-desktop(700px){
 
+	@include tablet{
 	//grid-template-columns:  ($size__site-sidebar) auto;
 	grid-template-columns: 80% 20%;
 	grid-template-areas:
-		"header header"
-		"main sidebar"
-		"footer footer";
+	"header header"
+	"main sidebar"
+	"footer footer";
 
-}
+	}
 }
 
 .site-header {
 
 	grid-area: header;
+	height: 25vh;
 }
 
 .site-main {
@@ -32,12 +33,28 @@
 
 .widget-area {
 	grid-area: sidebar;
-	background-color: rgb(218, 171, 171);
+	background-color: rgb(51, 2, 2);
 	padding-left: 6%;
+	color:white;
+	
 }
 
 .site-footer {
 	grid-area: footer;
+	background-color: rgb(246, 230, 228);
+	padding-left: 6%;
+	padding-bottom: 10%;
+	
+
 }
+
+
+.gmaps
+{
+	display: flex;
+	margin: 0 auto;
+}
+
+
 
 @import "no-sidebar";

@@ -66,6 +66,7 @@ Liste des blocs de cours par type_de_cours
 ------------------------------------------------------------------------------------------ */
 .home .cours {
     display : flex;
+    margin-top: 50%;
     flex-direction: column;
     h2 {
         text-align: center;
@@ -209,11 +210,11 @@ Liste des blocs de cours par type_de_cours
     -webkit-box-shadow: 5px 5px 33px 5px #8E8E8E; 
     box-shadow: 5px 5px 33px 5px #8E8E8E;
 }
-/*#media_image-2{
+#media_image-2{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-}*/
+}
 
 @keyframes anim-textNouvelles {
 	0%{

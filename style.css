@@ -1,5 +1,6 @@
+@charset "UTF-8";
 /*!
-Theme Name: sabrine_cheurfa_4w4
+Theme Name:  sabrine_cheurfa_4w4
 Theme URI: http://underscores.me/
 Author: sabrine cheurfa
 Author URI: http://referenced.ca
@@ -665,12 +666,20 @@ textarea {
 --------------------------------------------------------------*/
 .site {
   display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-areas: "header header" "main sidebar" "footer footer";
+  grid-template-columns: 100%;
+  grid-template-areas: "header header" "main main" "sidebar sidebar" "footer footer";
+}
+
+@media (min-width: 800px) {
+  .site {
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "header header" "main sidebar" "footer footer";
+  }
 }
 
 .site-header {
   grid-area: header;
+  height: 25vh;
 }
 
 .site-main {
@@ -681,10 +690,21 @@ textarea {
 
 .widget-area {
   grid-area: sidebar;
+  background-color: #330202;
+  padding-left: 6%;
+  color: white;
 }
 
 .site-footer {
   grid-area: footer;
+  background-color: #f6e6e4;
+  padding-left: 6%;
+  padding-bottom: 10%;
+}
+
+.gmaps {
+  display: flex;
+  margin: 0 auto;
 }
 
 .no-sidebar .site {
@@ -1181,7 +1201,7 @@ menu tablet
   margin-bottom: 1.5em;
 }
 
-/* local
+/* local accueil
 --------------------------------------------- */
 body.home {
   background-color: fff;
@@ -1245,6 +1265,7 @@ Liste des blocs de cours par type_de_cours
 ------------------------------------------------------------------------------------------ */
 .home .cours {
   display: flex;
+  margin-top: 50%;
   flex-direction: column;
 }
 
@@ -1334,9 +1355,7 @@ Liste des blocs de cours par type_de_cours
 }
 
 .nouvelles {
-  background-image: url(Tokyo_Ghoul_Visual_2.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-color: white;
   text-align: justify;
   width: 100%;
   margin-top: 5%;
@@ -1351,16 +1370,16 @@ Liste des blocs de cours par type_de_cours
 }
 
 .nouvelles h2:hover {
-  color: white;
+  color: black;
 }
 
 .nouvelles p {
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
 .nouvelles p:hover {
-  color: black;
+  color: red;
   animation: 5s anim-textNouvelles both;
 }
 
@@ -1376,17 +1395,18 @@ Liste des blocs de cours par type_de_cours
   box-shadow: 5px 5px 33px 5px #8E8E8E;
 }
 
-/*#media_image-2{
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}*/
+#media_image-2 {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 @keyframes anim-textNouvelles {
   0% {
     transform: translateX(0) translateY(0);
   }
   100% {
-    transform: translateX(100px) translateY(0);
+    transform: translateX(20px) translateY(0);
   }
 }
 
@@ -1662,6 +1682,7 @@ La barre du millieu
   flex-direction: row;
   justify-content: space-around;
   animation: anim-carte .5s both;
+  margin-bottom: 10%;
 }
 
 .galerie .flip-card {
@@ -1699,7 +1720,7 @@ La barre du millieu
 }
 
 .galerie .flip-card-back {
-  background-color: #b4cf82;
+  background-color: #050505;
   color: white;
   transform: rotateY(180deg);
 }
@@ -1778,22 +1799,22 @@ La barre du millieu
   font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.5rem);
 }
 
-.page-header {
+.page-header, .entry-header {
   margin-top: 130px;
 }
 
-.page-header .page-title {
+.page-header .page-title, .page-header .entry-header, .entry-header .page-title, .entry-header .entry-header {
   font-size: 3rem;
   color: #000600;
   margin-bottom: 0;
 }
 
-.page-header .archive-description {
+.page-header .archive-description, .entry-header .archive-description {
   font-size: 1rem;
   color: #461501;
 }
 
-.page-header .archive-description p {
+.page-header .archive-description p, .entry-header .archive-description p {
   margin: 0;
 }
 
@@ -1803,19 +1824,264 @@ La barre du millieu
   justify-content: center;
 }
 
-.site-main {
-  margin-top: 10%;
-}
-
 #categories-2 {
   margin-top: 30%;
 }
 
-.footerbar {
-  align-content: center;
+.entry-header, .page-header {
+  color: #710000;
+}
+
+.entry-header h1, .page-header h1 {
+  font-size: 3rem;
+}
+
+.entry-header h2, .page-header h2 {
+  font-size: 2rem;
+}
+
+.carrousel {
+  width: 300vw;
+  height: 50vh;
+  display: flex;
+  transition: transform .5s;
+  transform: translate(0);
+}
+
+.carrousel div {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.carrousel div:nth-of-type(1) {
+  background-image: url(ken2.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.carrousel div:nth-of-type(2) {
+  background-image: url(keneki.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.carrousel div:nth-of-type(3) {
+  background-image: url(kaneki.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#buttoncarrousel {
+  display: flex;
+  width: 100vw;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* local formulaire
 --------------------------------------------- */
+/* local type_cours
+--------------------------------------------- */
+.cours-accueil {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cours-accueil h2 {
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0%;
+  margin: 10px auto 0 auto;
+}
+
+.bloc {
+  width: 100vw;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bloc article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  border: 1px solid #aaa;
+  margin: 4%;
+}
+
+.bloc article p {
+  font-size: 1.3rem;
+  margin: .3rem;
+}
+
+.bloc article a {
+  display: block;
+  text-align: center;
+  font-size: clamp(1rem, -0.875rem +8.333vw, 3rem);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Web article {
+  background-color: white;
+}
+
+.Conception article {
+  background-color: white;
+}
+
+.Jeu article {
+  background-color: white;
+}
+
+.Spécifique article {
+  background-color: white;
+}
+
+@media (min-width: 800px) {
+  .accueil {
+    flex-direction: row;
+  }
+  .bloc article {
+    width: 42%;
+    margin: 2%;
+  }
+  .bloc article a {
+    font-size: clamp(1rem, -0.875rem +6.333vw, 3rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .accueil {
+    flex-direction: row;
+  }
+  .bloc article {
+    width: 29%;
+    margin: 2%;
+  }
+  .bloc article a {
+    font-size: clamp(1rem, -0.875rem +4.333vw, 3rem);
+  }
+}
+
+/* local projet_perso
+--------------------------------------------- */
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  animation: anim-carte2 .5s both;
+}
+
+.galerie .flip-card {
+  margin: 2%;
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+}
+
+.galerie .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.galerie .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.galerie .flip-card-front, .galerie .flip-card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.galerie .flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.galerie .flip-card-back {
+  background-color: #c1f4f8;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.galerie a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5rem;
+  animation: anim-texte .5s both;
+}
+
+.galerie a:hover {
+  animation: anim-texte .5s both;
+}
+
+@keyframes anim-carte {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    opacity: .5;
+    transform: translateX(0) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(100px);
+  }
+}
+
+@keyframes anim-texte {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anim-texte {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    opacity: .5;
+    transform: translateX(0) translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(20px);
+  }
+}
+
+/* local sidebar
+--------------------------------------------- */
+#secondary {
+  padding-left: 8%;
+}
 /*# sourceMappingURL=style.css.map */
