@@ -45,7 +45,7 @@ Traitement de l'ajout d'un article de cat Nouvelles
 	console.log('ajout')
 	let = monArticle = {
 		"title" : document.querySelector('.admin-rapid [name="title"]').value,
-		"content" : document.querySelector('.admin-rapid [name="content"]').content,
+		"content" : document.querySelector('.admin-rapid [name="content"]').value,
 		"status" : "publish",
 		"categories" : [34]
 	}
@@ -60,7 +60,7 @@ Traitement de l'ajout d'un article de cat Nouvelles
 		if(creerArticle.readyState == 4){
 			if(creerArticle.status == 201){
 				document.querySelector('.admin-rapid [name="title"]').value	=''
-				document.querySelector('.admin-rapid [name="content"]').content =''
+				document.querySelector('.admin-rapid [name="content"]').value =''
 			}
 			else{
 				alert('Erreur réessayez')
