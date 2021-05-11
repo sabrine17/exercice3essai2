@@ -12,7 +12,7 @@
 
 	let maRequete = new XMLHttpRequest();
    	console.log(maRequete);
-  	maRequete.open('GET', monObjJS.URLDomaine  + '/wp-json/wp/v2/posts?categories=34');
+  	maRequete.open('GET', monObjJS.URLDomaine  + '/wp-json/wp/v2/posts?categories=33');
     maRequete.onload = function () {
        console.log(maRequete);
        if (maRequete.status >= 200 && maRequete.status < 400) {
@@ -45,9 +45,9 @@ Traitement de l'ajout d'un article de cat Nouvelles
 	console.log('ajout')
 	let = monArticle = {
 		"title" : document.querySelector('.admin-rapid [name="title"]').value,
-		"content" : document.querySelector('.admin-rapid [name="content"]').content,
+		"content" : document.querySelector('.admin-rapid [name="content"]').value,
 		"status" : "publish",
-		"categories" : [34]
+		"categories" : [33]
 	}
 
 	console.log(JSON.stringify(monArticle))
@@ -60,7 +60,7 @@ Traitement de l'ajout d'un article de cat Nouvelles
 		if(creerArticle.readyState == 4){
 			if(creerArticle.status == 201){
 				document.querySelector('.admin-rapid [name="title"]').value	=''
-				document.querySelector('.admin-rapid [name="content"]').content =''
+				document.querySelector('.admin-rapid [name="content"]').value =''
 			}
 			else{
 				alert('Erreur réessayez')

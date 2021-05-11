@@ -172,8 +172,8 @@ Liste des blocs de cours par type_de_cours
 
 .nouvelles{
     
-    margin: 2% 4% 2% 3%;
-   // background-image: url(tokyoGbg.jpeg);
+  
+    background-image: url(tokyoGk.jpeg);
    // background-size: 100%;
    // background-repeat: no-repeat;
     //background-color: rgb(231, 225, 208);
@@ -189,12 +189,12 @@ Liste des blocs de cours par type_de_cours
     
 
     h2{
-        color:red;
+        color:rgb(85, 5, 5);
         
     }
 
     h2:hover{
-        color:black;
+        color:rgb(4, 13, 65);
     }
 
     p{
@@ -203,7 +203,7 @@ Liste des blocs de cours par type_de_cours
     
     }
     p:hover{
-       color: red;
+       color: rgb(70, 0, 0);
        animation: 5s anim-textNouvelles both;
     }
 }
@@ -211,7 +211,7 @@ Liste des blocs de cours par type_de_cours
 
 .admin-rapid{
 
-  
+    
     color:black;
     font-weight: bold;
     text-align: justify;
