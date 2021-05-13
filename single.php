@@ -74,64 +74,50 @@ get_header();
 </div>
 
 
+	<section class="img-caroussel2">
+			<div class="mySlides fade"></div>
+			<div class="mySlides fade"></div>
+			<div class="mySlides fade"></div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+	</section>
 </div>
 	
 
 
-<div id="shopify-section-1592883602552" class="shopify-section"><div class="image-with-text-overlay image-with-text-overlay--full-width">
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
 
-    <div class="image-with-text-overlay-block
-      image-with-text-overlay-block--full-width
-      image-with-text-overlay-block--1592883607711
-      "  data-analytic-position="2">
+// Next/previous controls
+	function plusSlides(n) {
+  	showSlides(slideIndex += n);
+	}
 
-      
-        <a class="image-with-text-overlay-block--link" href="/tokyoGk.jpeg" data-analytic-position="2" data-analytic-name="IMAGE"></a>
-      
+// Thumbnail image controls
+	function currentSlide(n) {
+ 	showSlides(slideIndex = n);
+	}
 
-        <div class="image-with-text-overlay-image-container">
-
-<style data-shopify="">.image-with-text-overlay-block--1592883607711 .image-with-text-overlay-image {
-                  height:74.42857142857143vw !important;}
-
-              @media only screen and (min-width: 990px) {
-                .image-with-text-overlay-block--1592883607711 .image-with-text-overlay-image {
-                    height:34.1796875vw !important;}
-              }</style><style data-shopify="">.image-with-text-overlay-block--1592883607711 .image-with-text-overlay__title,
-            .image-with-text-overlay-block--1592883607711 .image-with-text-overlay__description {
-              color: #ffffff;
-            }
-
-            .image-with-text-overlay-block--1592883607711 .image-with-text-overlay-image-container {
-              background-color: #e9e9e9;
-            }#ImageWithTextOverlayImage-1592883607711 {background-image: url(aot.jpeg);}
-
-              @media only screen and (min-width: 400px) {
-                #ImageWithTextOverlayImage-1592883607711 {background-image: url(aot2.jpeg);}
-              }
-
-              @media only screen and (min-width: 990px) {
-                #ImageWithTextOverlayImage-1592883607711 {
-                  background-image: url(aot.jpeg);
-                }
-              }
-
-              @media only screen and (min-width: 1140px) {
-                #ImageWithTextOverlayImage-1592883607711 {
-                  background-image: url(aot2.jpeg);
-                }
-              }
-
-              @media only screen and (min-width: 1440px) {
-                #ImageWithTextOverlayImage-1592883607711 {
-                  background-image: url(aot2.jpeg);
-                }
-              }</style><div class="image-with-text-overlay-image image-with-text-overlay-image--adapt" id="ImageWithTextOverlayImage-1592883607711" role="img" aria-label="JR DRESSES" data-alt="JR DRESSES">
-<div class="image-with-text-overlay-content-box image-with-text-overlay-content-box--bottom-center">
-                <div class="image-with-text-overlay-content-box__container"><div class="image-with-text-overlay__buttons"></div>
-                </div>
-              </div></div>
-        </div></div></div>
+	function showSlides(n) 
+	{
+  	var i;
+ 	 var slides = document.getElementsByClassName("mySlides");
+ 	 var dots = document.getElementsByClassName("dot");
+ 	 if (n > slides.length) {slideIndex = 1}
+ 	 if (n < 1) {slideIndex = slides.length}
+ 	 for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  	}
+  	for (i = 0; i < dots.length; i++) 
+	{
+      dots[i].className = dots[i].className.replace(" active", "");
+  	}
+  	slides[slideIndex-1].style.display = "block";
+  	dots[slideIndex-1].className += " active";
+	}
+</script>
 
 
 

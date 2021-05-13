@@ -541,11 +541,11 @@ a:hover, a:active {
 }
 
 .main-navigation a {
-  color: #ece395;
+  color: #d1a0cf;
 }
 
 .main-navigation a:visited {
-  color: #cecc84;
+  color: #ce84ca;
 }
 
 .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
@@ -690,20 +690,21 @@ textarea {
 
 .widget-area {
   grid-area: sidebar;
-  background-color: #f1ebeb;
+  background-color: white;
   padding-left: 6%;
   padding-bottom: 20%;
   padding-top: 20vh;
+  box-shadow: 5px 5px 33px 5px #8E8E8E;
 }
 
 .site-footer {
   display: flex;
   grid-area: footer;
-  background-color: #f1ebeb;
+  background-color: white;
   padding-left: 6%;
   padding-bottom: 10%;
   overflow: hidden;
-  box-shadow: 5px 5px 33px 5px #8E8E8E;
+  box-shadow: 0px 5px 33px 5px #acaaaa;
 }
 
 .gmaps {
@@ -1845,7 +1846,7 @@ La barre du millieu
 }
 
 .entry-header, .page-header {
-  color: #710000;
+  color: #974d91;
 }
 
 .entry-header h1, .page-header h1 {
@@ -2042,6 +2043,75 @@ p {
 
 .entry-content p {
   font-size: 1.5em;
+}
+
+.img-caroussel2 {
+  width: 300vw;
+  height: 60vh;
+  display: flex;
+  transition: transform .5s;
+  transform: translate(0);
+}
+
+.img-caroussel2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.img-caroussel2 div:nth-of-type(1) {
+  background-image: url(tk.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.img-caroussel2 div:nth-of-type(2) {
+  background-image: url(tk6.jpeg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.img-caroussel2 div:nth-of-type(3) {
+  background-image: url(tk7.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.img-caroussel2 #buttoncarrousel2 {
+  display: flex;
+  width: 100vw;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  left: 25%;
+  border-radius: 3px 0 0 3px;
+}
+
+.next:hover {
+  transform: translateX(-100%);
+}
+
+.prev:hover {
+  transform: translateX(100%);
 }
 
 /* local formulaire
