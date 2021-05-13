@@ -63,6 +63,7 @@
 			<button id='deux'></button>
 			<button id='trois'></button>	
 		</div>
+
 		<?php endif ?>
 		<!-- fin caroussel -->
 
@@ -95,6 +96,8 @@
 	
 		</section>
 
+		
+</div>
 		<?php endif ?>
 
 
