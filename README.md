@@ -1,4 +1,4 @@
-# labo10
+# tp2
 
 Auteur: Sabrine Cheurfa
 
@@ -9,11 +9,11 @@ Mon site est un site s'adressant principalement aux étudiants et nouveaux étud
 
 Le titre de mon site : TIM 
 
-Lien répertoire  git du labo10:
-https://github.com/sabrine17/labo10.git
+Lien répertoire  git du tp2:
+https://github.com/sabrine17/tp2.git
 
-Lien site git hub du labo10
-https://sabrine17.github.io/labo10/index.html
+Lien site git hub du tp2
+https://sabrine17.github.io/tp2/index.html
 // CLIQUER SUR 4W4 POUR AFFICHER LES IMAGES ET QUE LA PAGE FONCTIONNE NORMALEMENT
 
 Lien du site webdev
