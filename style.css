@@ -689,7 +689,6 @@ textarea {
 }
 
 .widget-area {
-  grid-area: sidebar;
   background-color: white;
   padding-left: 6%;
   padding-bottom: 20%;
@@ -2172,6 +2171,65 @@ p {
 
 .prev:hover {
   transform: translateX(100%);
+}
+
+.footer__links {
+  padding: 5% 5% 5% 5%;
+}
+
+.page-title {
+  margin-left: 6%;
+}
+
+.menu-brands {
+  color: #000;
+  cursor: pointer;
+  display: block;
+  height: 45px;
+  overflow: hidden;
+  font: 600 16px/22px proxima-nova,Arial,sans-serif;
+  letter-spacing: 1px;
+  padding: 11px 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu-brands.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.menu-brands__track {
+  display: flex;
+  -ms-overflow-style: none;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  position: relative;
+  scroll-behavior: auto;
+}
+
+.site-branding {
+  width: 100%;
+  background-color: black;
+  padding-top: 3px;
+  padding-left: 2%;
+}
+
+@media (min-width: 800px) {
+  .main-navigation {
+    width: 100%;
+    background-color: black;
+    height: 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-navigation {
+    width: 100%;
+    background-color: black;
+    height: 15%;
+  }
 }
 
 /* local formulaire
