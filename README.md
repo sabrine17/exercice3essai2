@@ -13,7 +13,7 @@ Lien répertoire  git du tp2:
 https://github.com/sabrine17/tp2.git
 
 Lien site git hub du tp2
-https://sabrine17.github.io/tp2/index.html
+https://sabrine17.github.io/tp2
 // CLIQUER SUR 4W4 POUR AFFICHER LES IMAGES ET QUE LA PAGE FONCTIONNE NORMALEMENT
 
 Lien du site webdev

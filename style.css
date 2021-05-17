@@ -694,17 +694,17 @@ textarea {
   padding-left: 6%;
   padding-bottom: 20%;
   padding-top: 20vh;
-  box-shadow: 5px 5px 33px 5px #8E8E8E;
 }
 
 .site-footer {
   display: flex;
   grid-area: footer;
-  background-color: white;
+  background-color: black;
+  color: gray;
   padding-left: 6%;
   padding-bottom: 10%;
   overflow: hidden;
-  box-shadow: 0px 5px 33px 5px #acaaaa;
+  font: 900 12px/14px proxima-nova,Arial,sans-serif;
 }
 
 .gmaps {
@@ -1376,7 +1376,6 @@ Liste des blocs de cours par type_de_cours
   margin-bottom: 5%;
   padding-left: 2%;
   padding-right: 2%;
-  box-shadow: 5px 5px 33px 5px #8E8E8E;
 }
 
 .nouvelles h2 {
@@ -1406,7 +1405,6 @@ Liste des blocs de cours par type_de_cours
   padding-left: 2%;
   padding-right: 2%;
   padding-bottom: 2%;
-  box-shadow: 5px 5px 33px 5px #8E8E8E;
 }
 
 #media_image-2 {
