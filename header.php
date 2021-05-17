@@ -30,6 +30,14 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'theme4w4' ); ?></a>
 
 	<header id="masthead" class="site-header">
+	<div class="menu-brands__track" style="">
+    <a class="menu-brands active" href="4w4-3/">Principal</a>
+	<a class="menu-brands" href="/4w4-3/582-3c1-design-dinteractivite-75h/">Design</a>
+    <a class="menu-brands"  href="/4w4-3/582-3j3-creation-de-jeu-3d-75h/">Création</a>
+    <a class="menu-brands"  href="/4w4-3/582-4w4-conception-dinterfaces-et-developpement-web/">Web</a>
+    <a class="menu-brands"  href="/4w4-3/582-6n3-stage-285h/">Stage</a>
+    <a class="menu-brands"  href="/4w4-3/360-4j4-creation-de-jeu-en-equipe-105h/">Jeu</a>
+	</div>
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -40,15 +48,19 @@
 			else :
 				?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				
+				
 				<?php
 			endif;
 			$theme4w4_description = get_bloginfo( 'description', 'display' );
 			if ( $theme4w4_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $theme4w4_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			
+			
+				<?php endif; ?>
 		</div><!-- .site-branding -->
-		
+	
 			<!-- debut caroussel -->
 		<?php
 		if ( is_front_page() ) :

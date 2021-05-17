@@ -42,6 +42,7 @@ body.home::after{
     font-weight: bold;
     font-size: clamp(1rem, #{"-0.875rem + 8.333vw"},3rem);
     margin-bottom: 0;
+    //text-align: center;
     a {
         text-decoration: none;
     }
@@ -114,7 +115,9 @@ Liste des blocs de cours par type_de_cours
                 background-size: 100%;
                 background-image: hidden;
             }
-            
+            .main-navigation{
+                display: none;
+            }
             #burger{
                 div{
                     display: none;
@@ -129,7 +132,9 @@ Liste des blocs de cours par type_de_cours
             background-repeat: no-repeat;
             background-size: 100%;
             }
-           
+            .main-navigation{
+                display: none;
+            }
             #burger{
                 div{
                     display: none;
@@ -178,7 +183,7 @@ Liste des blocs de cours par type_de_cours
 .nouvelles{
     
   
-    background-image: url(tokyoGk.jpeg);
+    //background-image: url(tokyoGk.jpeg);
    // background-size: 100%;
    // background-repeat: no-repeat;
     //background-color: rgb(231, 225, 208);
@@ -189,8 +194,8 @@ Liste des blocs de cours par type_de_cours
     margin-bottom:5%;
     padding-left: 2%;
     padding-right:2%;
-   // -webkit-box-shadow: 5px 5px 33px 5px #8E8E8E; 
-   // box-shadow: 5px 5px 33px 5px #8E8E8E;
+    -webkit-box-shadow: 5px 5px 33px 5px #8E8E8E; 
+    box-shadow: 5px 5px 33px 5px #8E8E8E;
     
 
     h2{
@@ -209,7 +214,7 @@ Liste des blocs de cours par type_de_cours
     }
     p:hover{
        color: rgb(70, 0, 0);
-       animation: 5s anim-textNouvelles both;
+       animation: 1s anim-textNouvelles both;
     }
 }
 
@@ -244,4 +249,67 @@ Liste des blocs de cours par type_de_cours
 		
 		transform : translateX(20px) translateY(0);
 	}
+}
+
+
+.footer__links{
+    padding:5% 5% 5% 5%;
+}
+
+.page-title{
+    margin-left:6%;
+}
+
+.menu-brands {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    height: 45px;
+    overflow: hidden;
+    font: 600 16px/22px proxima-nova,Arial,sans-serif;
+    letter-spacing: 1px;
+    padding: 11px 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+}
+
+.menu-brands.active {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.menu-brands__track {
+    display: flex;
+    -ms-overflow-style: none;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    position: relative;
+    scroll-behavior: auto;
+}
+
+
+.site-branding{
+    width: 100%;
+    background-color: black;
+    padding-top:3px;
+    padding-left: 2%;
+}
+
+
+.main-navigation{
+    
+    
+    @include tablet {
+      width: 100%;
+      background-color: black;
+      height: 15%;
+    }
+    @include desktop {
+        width: 100%;
+        background-color: black;
+        height: 15%;
+    }
 }

@@ -702,9 +702,10 @@ textarea {
   background-color: black;
   color: gray;
   padding-left: 6%;
+  padding-top: 5%;
   padding-bottom: 10%;
   overflow: hidden;
-  font: 900 12px/14px proxima-nova,Arial,sans-serif;
+  font-family: proxima-nova,Arial,sans-serif;
 }
 
 .gmaps {
@@ -1321,6 +1322,9 @@ Liste des blocs de cours par type_de_cours
     background-size: 100%;
     background-image: hidden;
   }
+  .home .cours section.bloc .main-navigation {
+    display: none;
+  }
   .home .cours section.bloc #burger div {
     display: none;
   }
@@ -1333,6 +1337,9 @@ Liste des blocs de cours par type_de_cours
     background-image: url(tokyoGk.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+  .home .cours section.bloc .main-navigation {
+    display: none;
   }
   .home .cours section.bloc #burger div {
     display: none;
@@ -1368,7 +1375,6 @@ Liste des blocs de cours par type_de_cours
 }
 
 .nouvelles {
-  background-image: url(tokyoGk.jpeg);
   background-color: white;
   text-align: justify;
   width: 100%;
@@ -1376,6 +1382,7 @@ Liste des blocs de cours par type_de_cours
   margin-bottom: 5%;
   padding-left: 2%;
   padding-right: 2%;
+  box-shadow: 5px 5px 33px 5px #8E8E8E;
 }
 
 .nouvelles h2 {
@@ -1393,7 +1400,7 @@ Liste des blocs de cours par type_de_cours
 
 .nouvelles p:hover {
   color: #460000;
-  animation: 5s anim-textNouvelles both;
+  animation: 1s anim-textNouvelles both;
 }
 
 .admin-rapid {
@@ -1419,6 +1426,65 @@ Liste des blocs de cours par type_de_cours
   }
   100% {
     transform: translateX(20px) translateY(0);
+  }
+}
+
+.footer__links {
+  padding: 5% 5% 5% 5%;
+}
+
+.page-title {
+  margin-left: 6%;
+}
+
+.menu-brands {
+  color: #000;
+  cursor: pointer;
+  display: block;
+  height: 45px;
+  overflow: hidden;
+  font: 600 16px/22px proxima-nova,Arial,sans-serif;
+  letter-spacing: 1px;
+  padding: 11px 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu-brands.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.menu-brands__track {
+  display: flex;
+  -ms-overflow-style: none;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  position: relative;
+  scroll-behavior: auto;
+}
+
+.site-branding {
+  width: 100%;
+  background-color: black;
+  padding-top: 3px;
+  padding-left: 2%;
+}
+
+@media (min-width: 800px) {
+  .main-navigation {
+    width: 100%;
+    background-color: black;
+    height: 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-navigation {
+    width: 100%;
+    background-color: black;
+    height: 15%;
   }
 }
 
@@ -1837,10 +1903,6 @@ La barre du millieu
   align-content: center;
   align-items: center;
   justify-content: center;
-}
-
-#categories-2 {
-  margin-top: 30%;
 }
 
 .entry-header, .page-header {
